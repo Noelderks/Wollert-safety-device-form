@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safety Device Inspection Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .device-section { margin-bottom: 30px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        .device-section h2 { margin-top: 0; }
+        .hidden { display: none; }
+    </style>
+    <script>
+        function toggleSection(selectElem, sectionId) {
+            var section = document.getElementById(sectionId);
+            section.style.display = selectElem.value === "Applicable" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <h1>Safety Device Inspection Form</h1>
+    <form>
+
+    <div class="device-section">
+        <h2>Emergency Stop Lanyard</h2>
+        <label for="applicability_0">Is this device applicable?</label>
+        <select id="applicability_0" onchange="toggleSection(this, 'section_0')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_0" class="hidden">
+            <p><strong>Inspection Criteria:</strong> Emergency stop lanyards require full coverage of hazardous zones, proper tension maintained by end-positioned springs, and immediate stop functionality. They must be accessible, durable, and manually resettable, with red rope and clear signage. Lanyards should be fail-safe and resistant to wear and environmental conditions.</p>
+            <p><strong>Compliance References:</strong> SWA WHS Regulation 191 VIC  OHS Regulations r79 (1) and (2)  and AS 4024 standards. and Plant Safety Requirements No. 1 ~ SHE-MSP-WHS-07.013</p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Emergency Stop Button</h2>
+        <label for="applicability_1">Is this device applicable?</label>
+        <select id="applicability_1" onchange="toggleSection(this, 'section_1')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_1" class="hidden">
+            <p><strong>Inspection Criteria:</strong> Emergency stop buttons must be inspected routinely to ensure they are clearly visible, easily accessible, and functioning correctly. They must immediately stop machinery, be manually resettable, and operate independently of electrical faults. The actuator must be red, with Yellow background .</p>
+            <p><strong>Compliance References:</strong> SWA WHS Regulation 191 VIC  OHS Regulations r79 (1) and (2)  and AS 4024 standards. and Plant Safety Requirements No. 1 ~ SHE-MSP-WHS-07.013</p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Interlocked Safety Gate Inspection</h2>
+        <label for="applicability_2">Is this device applicable?</label>
+        <select id="applicability_2" onchange="toggleSection(this, 'section_2')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_2" class="hidden">
+            <p><strong>Inspection Criteria:</strong> Interlocked safety gates must be inspected regularly to ensure structural integrity, secure mounting, and reliable interlock function. The gate must prevent access during machine operation and block machine start-up when open. Electrical systems must be intact and fail-safe.</p>
+            <p><strong>Compliance References:</strong> </p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Machine Isolator Inspection</h2>
+        <label for="applicability_3">Is this device applicable?</label>
+        <select id="applicability_3" onchange="toggleSection(this, 'section_3')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_3" class="hidden">
+            <p><strong>Inspection Criteria:</strong> Machine isolators must be securely mounted, and fully functional. They must completely disconnect energy sources, be lockable in the OFF position, and prevent accidental reactivation. Wiring and labels must be intact, and isolation points tested routinely.</p>
+            <p><strong>Compliance References:</strong> </p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Light Curtain Inspection</h2>
+        <label for="applicability_4">Is this device applicable?</label>
+        <select id="applicability_4" onchange="toggleSection(this, 'section_4')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_4" class="hidden">
+            <p><strong>Inspection Criteria:</strong> </p>
+            <p><strong>Compliance References:</strong> </p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Light curtains must be properly  aligned , clean lenses, and secure mounting. They must stop machinery immediately when interrupted and require manual reset. Systems must be fail-safe, integrated into control circuits, and tested for reliability.</h2>
+        <label for="applicability_5">Is this device applicable?</label>
+        <select id="applicability_5" onchange="toggleSection(this, 'section_5')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_5" class="hidden">
+            <p><strong>Inspection Criteria:</strong> </p>
+            <p><strong>Compliance References:</strong> </p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Interlocked Key System Inspection</h2>
+        <label for="applicability_6">Is this device applicable?</label>
+        <select id="applicability_6" onchange="toggleSection(this, 'section_6')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_6" class="hidden">
+            <p><strong>Inspection Criteria:</strong> Interlocked key systems must be secure, undamaged, and functioning correctly. The system must enforce a safe sequence, preventing access to hazardous areas unless isolation is confirmed. Keys should only be removable under safe conditions.</p>
+            <p><strong>Compliance References:</strong> Compliance with WHS Regulation 200 and AS 4024.1602 is essential to ensure safe access control and machine isolation.  and Plant Safety Requirements No. 1 ~ SHE-MSP-WHS-07.013</p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Collision Sensor</h2>
+        <label for="applicability_7">Is this device applicable?</label>
+        <select id="applicability_7" onchange="toggleSection(this, 'section_7')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_7" class="hidden">
+            <p><strong>Inspection Criteria:</strong> Collision sensors must be securely mounted, and functioning as intended. These sensors must reliably detect proximity to obstacles or personnel and trigger appropriate alerts or automatic shutdowns to prevent accidents. They must operate independently of other control systems and remain effective under varying environmental conditions.</p>
+            <p><strong>Compliance References:</strong> Installation must comply with WHS Regulation 191, AS 4024 series standards, and Plant Safety Requirements No. 1 ~ SHE-MSP-WHS-07.013. Inspection procedures should confirm sensor responsiveness, coverage area, and integration with emergency systems.</p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Warning devices</h2>
+        <label for="applicability_8">Is this device applicable?</label>
+        <select id="applicability_8" onchange="toggleSection(this, 'section_8')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_8" class="hidden">
+            <p><strong>Inspection Criteria:</strong> </p>
+            <p><strong>Compliance References:</strong> </p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Warning devices must be clearly visible, easily audible or detectable, and functioning correctly. These devices—such as flashing lights, sirens, or alarms—must provide immediate alerts to signal hazards, equipment movement, or emergency conditions. They must be positioned for maximum effectiveness and remain operational under all expected environmental conditions.</h2>
+        <label for="applicability_9">Is this device applicable?</label>
+        <select id="applicability_9" onchange="toggleSection(this, 'section_9')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_9" class="hidden">
+            <p><strong>Inspection Criteria:</strong> </p>
+            <p><strong>Compliance References:</strong> This is a requirement under OHS Regulations r80(1). WHS Regulation 191, AS 4024 standards, and Plant Safety Requirements No. 1 ~ SHE-MSP-WHS-07.013 .</p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Motor Speed Monitoring Inspection</h2>
+        <label for="applicability_10">Is this device applicable?</label>
+        <select id="applicability_10" onchange="toggleSection(this, 'section_10')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_10" class="hidden">
+            <p><strong>Inspection Criteria:</strong> </p>
+            <p><strong>Compliance References:</strong> motor speed monitoring modules must be inspected regularly to ensure they are securely mounted, correctly configured, and fully functional. These devices detect zero or abnormal speed conditions and delay access to hazardous areas until safe. They must meet AS 4024.1503 (PL e/Cat. 3) and AS 62061 (SIL 3) standards.</p>
+        </div>
+    </div>
+    
+    <div class="device-section">
+        <h2>Delayed Timer System Inspection</h2>
+        <label for="applicability_11">Is this device applicable?</label>
+        <select id="applicability_11" onchange="toggleSection(this, 'section_11')">
+            <option value="Not Applicable">Not Applicable</option>
+            <option value="Applicable">Applicable</option>
+        </select>
+        <div id="section_11" class="hidden">
+            <p><strong>Inspection Criteria:</strong> Delayed timer systems must be inspected regularly to ensure they are securely installed, accurately timed, and fully functional. The delay must be sufficient to allow all hazardous motion to cease before gate access is possible. Timing must be tested to confirm safe sequencing with motor stop functions https://brickworkslimited-my.sharepoint.com/personal/brickworks-datasync_brickworks_com_au/Documents/DONESAFE/Safety%20Incentive%20Program%20Targets%202025-26.xlsx?web=1</p>
+            <p><strong>Compliance References:</strong> </p>
+        </div>
+    </div>
+    
+        <input type="submit" value="Submit Inspection">
+    </form>
+</body>
+</html>
